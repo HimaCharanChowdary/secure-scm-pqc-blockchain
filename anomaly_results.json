@@ -1,0 +1,58 @@
+{
+  "best_model": "SVM",
+  "total_records": 4131,
+  "features_used": [
+    "locZscore",
+    "sizeZscore",
+    "loc",
+    "sizeBytes",
+    "hashFreq",
+    "isDuplicate",
+    "routeLength",
+    "routeIsNormal",
+    "hasVerifier",
+    "hasDeployer",
+    "fromOrg",
+    "toOrg",
+    "hourOfDay",
+    "dayOfWeek",
+    "timeGapSeconds",
+    "hashEntropy",
+    "sigLength",
+    "onChain"
+  ],
+  "model_comparison": {
+    "DecisionTree": {
+      "precision": 0.9692,
+      "recall": 0.9545,
+      "f1_score": 0.9618
+    },
+    "SVM": {
+      "precision": 0.9697,
+      "recall": 0.9697,
+      "f1_score": 0.9697
+    },
+    "GradientBoosting": {
+      "precision": 0.9688,
+      "recall": 0.9394,
+      "f1_score": 0.9538
+    },
+    "RandomForest": {
+      "precision": 0.9844,
+      "recall": 0.9545,
+      "f1_score": 0.9692
+    }
+  },
+  "best_metrics": {
+    "tp": 64,
+    "fp": 2,
+    "tn": 759,
+    "fn": 2,
+    "precision": 0.9697,
+    "recall": 0.9697,
+    "f1_score": 0.9697
+  },
+  "total_flagged": 326,
+  "true_positives": 322,
+  "false_positives": 4
+}
